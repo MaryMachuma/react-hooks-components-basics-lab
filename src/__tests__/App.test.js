@@ -1,3 +1,4 @@
+import React from "react"
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
@@ -7,9 +8,9 @@ test("renders without errors", () => {
   expect(() => render(<App />)).not.toThrow();
 });
 
-test("renders the correct child components", () => {
+test("renders without errors", () => {
   const { container } = render(<App />);
-
+ 
   /*
     Uncomment the line below to see the DOM elements being returned
     by the App component in your terminal when you run the tests
